@@ -51,7 +51,8 @@ function CalculatorDisplay(props) {
 
 class Calculator extends Component {
   constructor(props) {
-    super(props);
+    super(props); 
+
     this.state = {
       displayValue: '0',
       operator: null,
@@ -63,6 +64,7 @@ class Calculator extends Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
+  
   processDigit(newKeyValue) {
     const { displayValue, waitingForOperand } = this.state;
 
